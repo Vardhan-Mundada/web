@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/footer-new.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./styles/navbar_style.css">
 
 
     <link rel="shortcut icon" href="./images/navbarAndFooter/PSF + Marsh White1.png">
@@ -55,103 +56,34 @@
     <main class="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
 
         <!-- NAVBAR START -->
-        <div class="nav-bg"></div>
-        <!-- <div class="logo-nav"><a href="./main"><img src="images/navbarAndFooter/MM + PSF + BF.png"
-                                alt=""></a></div> -->
-        <input type="checkbox" id="burger-toggle">
-        <label for="burger-toggle" class="burger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-        <div class="menu">
-            <div class="menu-inner">
-                <ul class="menu-nav">
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./main"><span>
-                                <div><i class="fa-solid fa-house" style="padding-right: 1rem;"></i>Home
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./aboutus"><span>
-                                <div><i class="fa-regular fa-file-lines" style="padding-right: 1rem;"></i>About Us</div>
-                            </span></a></li>
-                    <!-- <li class="menu-nav-item"><a class="menu-nav-link" href="./partners"><span>
-							<div ><i class="fa-solid fa-handshake" style="padding-right: 1rem;"></i>Present Partners
-							</div>
-						</span></a></li> -->
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./partners"><span>
-                                <div> <i class="fa-regular fa-handshake" style="padding-right: 1rem;"></i>Sponsors /
-                                    Partners</div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./startup_expo"><span>
-                                <div><i class="fa-solid fa-stairs" style="padding-right: 1rem;"></i>Startup
-                                    Expo</div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./alumni"><span>
-                                <div><i class="fa-solid fa-people-group" style="padding-right: 1rem;"></i>Alumni</div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./internship_portal.html"><span>
-                                <div><i class="fa-regular fa-calendar-days" style="padding-right: 1rem;"></i>Internship
-                                    Portal
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="events24.html"><span>
-                                <div><i class="fa-sharp fa-solid fa-puzzle-piece"
-                                        style="padding-right: 1rem;"></i>Events
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./investor"><span>
-                                <div><i class="fa-solid fa-hand-holding-dollar"
-                                        style="padding-right: 1rem;"></i>Investors
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./visitorreg.php"><span>
-                                <div><i class="fa-solid fa-shoe-prints" style="padding-right: 1rem;"></i>Visitor
-                                    Registration</div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./contact.php"><span>
-                                <div><i class="fa-solid fa-envelope-open-text" style="padding-right: 1rem;"></i>Contact
-                                    Us
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="./team"><span>
-                                <div><i class="fa-solid fa-user-group" style="padding-right: 1rem;"></i>Team
-                                </div>
-                            </span></a></li>
-                    <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
-                                <div>
-                                    <center><i class="fa-solid fa-chevron-down"></i></center>
-                                </div>
-                            </span></a></li>
-                </ul>
-                <div class="gallery">
-                    <div class="title">
-                        <p>PSF'22 Gallery</p>
-                    </div>
-                    <div class="images">
-                        <a class="image-link" style="overflow-y: hidden;overflow-x: hidden;" href="#">
-                            <div class="image" data-label="PSF'22 Gallery"><img
-                                    src="images/navbarAndFooter/PSF'22_Gallery0.jpg" alt="Gallery"></div>
-                        </a>
-                        <a class="image-link" style="overflow-y: hidden;overflow-x: hidden;" href="#">
-                            <div class="image" data-label="PSF'22 Gallery"><img
-                                    src="images/navbarAndFooter/PSF'22_Gallery1.jpg" alt="Our Gallery">
-                            </div>
-                        </a>
-                        <a class="image-link" style="overflow-y: hidden;overflow-x: hidden;" href="#">
-                            <div class="image" data-label="PSF'22 Gallery"><img
-                                    src="images/navbarAndFooter/PSF'22_Gallery2.jpg" alt="Our Gallery">
-                            </div>
-                        </a>
-                        <a class="image-link" style="overflow-y: hidden;overflow-x: hidden;" href="#">
-                            <div class="image" data-label="PSF'22 Gallery"><img
-                                    src="images/navbarAndFooter/PSF'22_Gallery3.jpg" alt="Our Gallery">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://kit.fontawesome.com/6fc46b33e7.js" crossorigin="anonymous"></script>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i style="font-size: 3rem ;  padding-top: 40px;" class="fas fa-bars"></i>
+            </label>
+            <!-- <div class="imgg"><a href="./main"><img  class="imgg" src="PSF + Marsh White1.png" alt=""></a></div> -->
+            <label class="loo"><img class="imgg" src="./images/navbarAndFooter/PSF + Marsh White1.png" alt=""></label>
+            <ul>
+          <li><a style="background-color: rebeccapurple;border-radius: 10%;" href="#"><i id="icon"
+                    class="fa-solid fa-shoe-prints" style="padding-right: 0.5rem;"></i>Home</a></li>
+              <li><a href="#"> <i id="icon" class="fa-regular fa-file-lines" style="padding-right: 0.5rem;"></i> About Us</a>
+              </li>
+              <li><a href="#"> <i id="icon" class="fa-regular fa-handshake" style="padding-right: 0.5rem;"></i>Startup </a></li>
+              <li><a href="#"> <i id="icon" class="fa-solid fa-people-group" style="padding-right: 0.5rem;"></i>Alumni</a></li>
+              <li><a href="#"> <i id="icon" class="fa-regular fa-calendar-days" style="padding-right: 0.5rem;"></i>Internship
+                  Portal</a></li>
+              <li><a href="#"> <i id="icon" class="fa-sharp fa-solid fa-puzzle-piece"
+                    style="padding-right: 0.5rem;"></i>Event</a></li>
+              <li><a href="#"> <i id="icon" class="fa-solid fa-hand-holding-dollar"
+                    style="padding-right: 0.5rem;"></i>Investors</a></li>
+              <!-- <li><a style="background-color: rebeccapurple;border-radius: 10%;" href="#registration"><i id="icon"
+                    class="fa-solid fa-shoe-prints" style="padding-right: 0.5rem;"></i>Registration</a></li> -->
+              <li><a href="#"><i id="icon" class="fa-solid fa-envelope-open-text" style="padding-right: 0.5rem;"></i>Contact
+                  Us</a></li>
+              <li><a href="#"><i id="icon" class="fa-solid fa-user-group" style="padding-right: 0.5rem;"></i>Team</a></li>
+        
+            </ul>
+          </nav>
         <!-- NAVBAR END -->
         <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
 
