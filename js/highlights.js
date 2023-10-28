@@ -8,7 +8,7 @@
       if (count == 15000) { 
         clearInterval(count); 
       } else {
-        count = count + 100;
+        count = count + 150;
         counterfoot.textContent = count + "+";
       }
     }, 42);

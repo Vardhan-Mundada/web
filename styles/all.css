@@ -474,7 +474,7 @@
   }
   @media screen and (max-width:480px) {
     .container-team{
-    margin-left: 20%;
+    /* margin-left: 20%; */
      }
     }   
   .col-lg-4{
@@ -501,7 +501,7 @@
   @media screen and (max-width:480px) {
       .section-team .header-section .title{
           margin-top: 20%;
-          margin-left: -20%;
+          /* margin-left: -20%; */
           font-size: 30px;
       }
       #name1{
@@ -592,6 +592,7 @@
     min-height: 50vh;
   }
   .highlight{
+    font-size: 34px;
     font-weight: 900;
     color: lightsteelblue;
     padding-top: 5rem;
@@ -735,8 +736,8 @@
     stroke-width: 14;
     stroke-dasharray: 480;
     stroke-dashoffset: 190;
-    -webkit-animation: pieChart 2.8s linear forwards;
-    animation: pieChart 2.8s linear forwards;
+    -webkit-animation: pieChart 7s linear forwards;
+    animation: pieChart 5s linear forwards;
     
   }
 
