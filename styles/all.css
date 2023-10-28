@@ -469,8 +469,8 @@
   }
   .container-team{
       top:0%;
-      margin-left: 10%;
-      width: 80%;
+      /* margin-left: 10%; */
+      width: 100%;
   }
   @media screen and (max-width:480px) {
     .container-team{
