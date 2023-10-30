@@ -13,8 +13,8 @@
     justify-content: center;
     text-align: left;
     color: white;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
     width: 80%;
     line-height: 1.5rem;
     z-index: 1;
@@ -28,6 +28,24 @@
     /* font-family: reospec; */
   
   }
+  @media screen and (min-width:720px) {
+    .theme .what{
+      margin-left: -15%;
+      display: flex;
+      width: 85vw;
+    }
+    .theme .question1{
+      opacity: 1;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    }
+    .theme .what img{
+      max-width:400px ;
+      display: flex;
+    }
+  }
+  
   
   .theme p {
     font-weight: 500;

@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="./styles/navBar-index.css">
   <link rel="stylesheet" href="./styles/footer-index.css">
   <link rel="stylesheet" href="./styles/footer-new.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -176,8 +177,10 @@
         </div>
         <!-- THEME START -->
         <div class="theme">
-          <h1 class="question" data-splitting>What is Pune Startup Fest?</h1>
-          <p>Pune Startup Fest is an annual startup festival organised by BHAU's I&E-Cell, COEP Technological
+          <div class="what">
+            <div class="what-block">
+          <h1 class="question1" data-splitting data-aos="fade-up">What is Pune Startup Fest?</h1>
+          <p data-aos="fade-up">Pune Startup Fest is an annual startup festival organised by BHAU's I&E-Cell, COEP Technological
             University. It is a unique startup expo, which provides an excellent platform for numerous
             students and startups to connect with this ever growing entrepreneurial world.
             <br>A variety of events are organised during the fest. Keynote lectures and many speeches by
@@ -188,6 +191,9 @@
             throughout the
             community.
           </p>
+        </div>
+          <img src="./images/about/about_psf.jpg" alt="" data-aos="zoom-in">
+        </div>
           <!-- <center>
 <div class="register-button"><button type="button" class="btn btn-primary btn-5"><a
       href="https://www.townscript.com/e/launchpad-332133" style="color: aliceblue;"
@@ -910,12 +916,18 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      offset: 300,
-      duration: 2000, // Animation duration in milliseconds
-      once: false,     // Animation only once on page load
-    });
+    // AOS.init({
+    //   offset: 300,
+    //   duration: 2000, 
+    //   once: false,     
+    // });
+    AOS.init(
+      {
+        duration:2000 
+      }
+    );
   </script>
 
   <script>

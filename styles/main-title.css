@@ -11,26 +11,148 @@
   
 
   .para-text .text {
-    padding-left: 4rem;
+    /* padding-left: 4rem;   */
     padding-top: 2rem;
     text-align: center;
     position: relative;
     justify-content: center;
     text-transform: uppercase;
-    line-height: 8rem;
-    letter-spacing: 1rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
     background: linear-gradient(to bottom, #ffffff 0%, #e2d7f8 50%, #bfa2f3 100%);
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 7rem;
     font-family: 'Anton', sans-serif;
-
+    /* opacity: 0;
+    transform-origin: bottom center;
+    transform: rotateX(-90deg); */
+    color: none;
+    animation: blur 10s ease-out infinite;
+    -webkit-animation: blur 10s ease-out infinite;
   }
-  .wrapper {
-    transform: translateZ(1px);
-    position: relative;
+  /* .para-text .text:nth-child(1) {
+    -webkit-animation: roll-in 0.15s 0s ease-out forwards;
+            animation: roll-in 0.15s 0s ease-out forwards;
+  }
+  .para-text .text:nth-child(2) {
+    -webkit-animation: roll-in 0.05s 0.175s ease-out forwards;
+            animation: roll-in 0.05s 0.175s ease-out forwards;
+  }
+  .para-text .text:nth-child(3) {
+    -webkit-animation: roll-in 0.15s 0.35s ease-out forwards;
+            animation: roll-in 0.15s 0.35s ease-out forwards;
+  }
+  .para-text .text:nth-child(4) {
+    -webkit-animation: roll-in 0.15s 0.525s ease-out forwards;
+            animation: roll-in 0.15s 0.525s ease-out forwards;
+  }
+  @-webkit-keyframes roll-in {
+    0% {
+      transform: rotateX(-90deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in {
+    0% {
+      transform: rotateX(-90deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  } */
+  
+/*   
+  .para-text .text:nth-child(1) {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+  }
+  .para-text .text:nth-child(2) {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+  .para-text .text:nth-child(3) {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+  .para-text .text:nth-child(4) {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+   
+  @keyframes blur {
+    0%		{opacity:0;}
+    
+    15%		{opacity: 1;}
+    
+    85%		{opacity: 1;}
+    
+    100%	{ opacity:0;}
+  }
+  
+  @-webkit-keyframes blur {
+    0%		{text-shadow:  0 0 100px #fff; opacity:0;}
+    5%		{text-shadow:  0 0 90px #fff;}
+    15%		{opacity: 1;}
+    20%		{text-shadow:  0 0 0px #fff;}
+    80%		{text-shadow:  0 0 0px #fff;}
+    85%		{opacity: 1;}
+    95%		{text-shadow:  0 0 90px #fff;}
+    100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+  }
+*/
+
+.para-text .text:nth-child(1) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 0.8s 0.2s linear ;
+          animation: blur-text 0.8s 0.2s linear ;
 }
+.para-text .text:nth-child(2) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 0.8s 0.25s linear alternate;
+          animation: blur-text 0.8s 0.25s linear alternate;
+}
+.para-text .text:nth-child(3) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 0.8s 0.3s linear alternate;
+          animation: blur-text 0.8s 0.3s linear alternate;
+}
+.para-text .text:nth-child(4) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 0.8s 0.35s linear alternate;
+          animation: blur-text 0.8s 0.35s linear alternate;
+}
+
+
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+
+
+
+
   .parallax-section{
     z-index: 1;
 	  overflow: hidden;
