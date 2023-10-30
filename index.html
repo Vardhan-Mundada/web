@@ -919,17 +919,17 @@
   </script>
 
   <script>
-const parallax = document.querySelector('.bg');
+// const parallax = document.querySelector('.bg');
 const title = document.querySelector('.para-text');
 const navbar = document.querySelector('.navbar11');
-const parallax2 = document.querySelector('.bg-main');
+// const parallax2 = document.querySelector('.bg-main');
 
 window.addEventListener('scroll', function () {
     let offset = window.pageYOffset;
 
     // Background parallax
-    parallax.style.transform = `translateZ(-1px) scale(1) translateY(${offset * 0.1}px)`;
-    parallax2.style.transform = `translateZ(10px) scale(1) translateY(${offset * 0.2}px)`;
+    // parallax.style.transform = `translateZ(-1px) scale(1) translateY(${offset * 0.1}px)`;
+    // parallax2.style.transform = `translateZ(10px) scale(1) translateY(${offset * 0.2}px)`;
     // Title parallax (move it faster)
     title.style.transform = ` translateZ(-10px) translateY(${offset * 0.6}px)`;
 
