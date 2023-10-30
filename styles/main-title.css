@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+::-moz-selection {
+    background-color: #C3CFE2;
+  }
+  
+  ::selection {
+    background-color: #C3CFE2;
+  }
+  
+
+  .text {
+    padding-left: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 8rem;
+    letter-spacing: 1rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7rem;
+    font-family: 'Anton', sans-serif;
+
+  }
+  .wrapper {
+    transform: translateZ(1px);
+    position: relative;
+}
+  .parallax-section{
+    z-index: 1;
+	  overflow: hidden;
+    transform-style: preserve-3d;
+  }
+
+  @media screen and (max-width: 500px){
+    .text {
+        padding-left: 3rem;
+        padding-top: 7rem;
+        text-align: left;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ffffff 0%, #dbc3fa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+        font-family: "Poppins", sans-serif;
+    }
+  }

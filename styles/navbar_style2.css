@@ -1,0 +1,169 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} */
+
+/* body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #0d1b24;
+} */
+
+nav {
+    background:transparent;
+   /* position: absolute; */
+    height: 5%;
+    width: 100%;
+}
+
+.imgg{
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    height: 70px;
+    width: 90px;
+}
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-top: 20px;
+    z-index: 100;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+/* a:hover {
+    background: #072941;
+    transition: .5s;
+} */
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center it */
+    transition: width 0.3s ease-in-out;
+}
+a:hover::before {
+    width: 100%;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1305px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .checkbtn {
+        display: block;
+       
+    }
+   
+   
+    ul {
+        border-top-right-radius: 2%;
+        /* margin-top: 50px; */
+        position: absolute;
+        width: 100%;
+        /* height: 100vh; */
+        background: #1c3045;
+        top: 80px;
+        left: -108%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #8e9397;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* section {
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+} */
+
+@media (min-width: 1420px) {
+    #icon{
+        display: none;
+    }
+}
+/* Your existing CSS styles */
+
+nav ul li a[href="#registration"]:hover {
+    background-color: rgb(63, 31, 95);
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add any additional CSS styles as needed */
+
