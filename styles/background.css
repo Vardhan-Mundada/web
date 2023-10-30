@@ -5,6 +5,9 @@
     list-style: none;
     box-sizing: border-box; */
 } 
+html {
+  scroll-behavior: smooth;
+}
 
 /* .bg {
   background-image: url(../images/bg.webp);
