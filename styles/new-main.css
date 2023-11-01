@@ -1,5 +1,5 @@
 /* Theme Start */
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @font-face {
     font-family: reospec;
     src: url(../fonts/Reospec.otf);
@@ -20,14 +20,12 @@
     z-index: 1;
   }
   
-  .theme h1 {
+  /* .theme h1 {
     opacity: 0.5;
     font-weight: 900;
     padding-bottom: 1rem;
     font-size: 3rem;
-    /* font-family: reospec; */
-  
-  }
+  } */
   @media screen and (min-width:720px) {
     .theme .what{
       margin-left: -15%;
@@ -39,27 +37,91 @@
     font-weight: 900;
     padding-bottom: 1rem;
     font-size: 3rem;
+    margin-left: -13rem;
     }
     .theme .what img{
       max-width:400px ;
       display: flex;
     }
+    .theme .question{
+        /* opacity: 0.5; */
+      font-weight: 900;
+      padding-bottom: 1rem;
+      font-size: 3rem;
+    }
+    .theme .theme-child{
+      width: 85vw;
+      margin-left: -18%;
+      position: relative;
+      justify-content: center;
+    }
+    .theme .theme-child p{
+      text-align: center;
+      max-width: 80%;
+      margin-left: 8%;
+    }
+    .theme-child .theme-statment{
+      text-align: center;
+      /* margin-left: 15%; */
+      font-weight: 1500;
+      padding-bottom: 4rem;
+      padding-top: 1rem;
+      font-size: 5rem;
+      z-index: 1;
+      margin-top: 15rem;
+    }
+    .theme .theme-child .theme-para{
+      margin-top: 8rem;
+    }
   }
   
   
+
+
+  .splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    z-index: -1;
+    
+  }
+  .splash__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .splash__bg span {
+    position: absolute;
+    display: block;
+    top: 54%;
+    left: 50%;
+    border-radius: 100%;
+    border: 1px solid #086ACC;
+    height: 120px;
+    width: 120px;
+    margin-left: 2rem;
+    transform: translate(-50%, -50%);
+  }
+
+
   .theme p {
     font-weight: 500;
     font-size: 18px;
     padding-bottom: 2rem;
   }
   
-  .theme h1:hover {
+  /* .theme h1:hover {
     transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
     transition-delay: calc(20ms * var(--char-index));
     color: rgb(255, 255, 255);
     opacity: 1;
     transform: translateY(-0.25em);
-  }
+  } */
   
   .register-button {
     padding-bottom: 3rem;
@@ -108,7 +170,8 @@
     height: 80vh;
     background-color: rgba(51, 51, 51, 0);
     overflow: hidden;
-    z-index: 1;
+    position: relative;
+    z-index: 99;
     overflow-x: visible;
   }
   
@@ -118,6 +181,8 @@
     position: relative;
     cursor: pointer;
     overflow-x: visible;
+    z-index: 99;
+
   }
   
   .play-backdrop {
@@ -128,6 +193,7 @@
     opacity: 0;
     visibility: hidden;
     overflow-x: visible;
+    z-index: 99;
   }
   
   .play-close {
@@ -142,6 +208,7 @@
     opacity: 0;
     cursor: pointer;
     overflow-x: visible;
+    z-index: 99;
   }
   
   .play-close::before,
@@ -156,6 +223,7 @@
     transform: rotate(45deg);
     background-color: #fff;
     overflow-x: visible;
+    
   }
   
   .play-close::after {

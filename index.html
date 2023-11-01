@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles/navbar_style2.css">
+  
   <!-- Navbar css -->
-
+  <link rel="stylesheet" href="./styles/navbar_style_1nov.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +45,8 @@
   <link rel="stylesheet" href="./styles/footer-index.css">
   <link rel="stylesheet" href="./styles/footer-new.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -59,6 +61,7 @@
   </script>
 
 <script src="./js/smooth.js"></script>
+<script src="./js/theme.js"></script>
 
   <link media="all"
     href="https://cruip.com/wp-content/cache/autoptimize/css/autoptimize_5135fdc87ac4f1636516844aaba4d884.css"
@@ -66,7 +69,24 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  // Your JavaScript code here
+  const circleEls = document.querySelectorAll('.js-circle');
+  const circleTl = gsap.timeline({ repeat: -1, yoyo: true });
 
+  let circleSize = 1;
+  circleEls.forEach(circle => {
+    gsap.set(circle, { scale: circleSize });
+    circleSize += 0.5;
+  });
+
+  circleTl.from(circleEls, { scale: 1, stagger: 0.175, duration: 0.9, ease: Power3.inOut });
+});
+
+
+
+  </script>
 
 </head>
 
@@ -78,40 +98,61 @@
 
     <div class="wrapper">
 
+      <div class="loo"><img class="imgg" src="PSF + Marsh White1.png" alt=""></div>
       <!-- NAVBAR START -->
-      <nav class="navbar11" style="z-index: 2;">
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-              <i style="font-size: 3rem ;  padding-top: 40px;" class="fas fa-bars"></i>
-          </label>
-          <!-- <div class="imgg"><a href="./main"><img  class="imgg" src="PSF + Marsh White1.png" alt=""></a></div> -->
-          <label class="loo"><img class="imgg" src="./images/navbarAndFooter/PSF + Marsh White1.png" alt=""></label>
-          <ul>
-              <li><a style="background-color: rebeccapurple;border-radius: 10%;" href="#"><i id="icon"
-                          class="fa-solid fa-shoe-prints" style="padding-right: 0.5rem;"></i>Home</a></li>
-              <li><a href="#"> <i id="icon" class="fa-regular fa-file-lines" style="padding-right: 0.5rem;"></i> About
-                      Us</a>
-              </li>
-              <li><a href="#"> <i id="icon" class="fa-regular fa-handshake" style="padding-right: 0.5rem;"></i>Startup
-                  </a></li>
-              <li><a href="#"> <i id="icon" class="fa-solid fa-people-group"
-                          style="padding-right: 0.5rem;"></i>Alumni</a></li>
-              <li><a href="#"> <i id="icon" class="fa-regular fa-calendar-days"
-                          style="padding-right: 0.5rem;"></i>Internship
-                      Portal</a></li>
-              <li><a href="#"> <i id="icon" class="fa-sharp fa-solid fa-puzzle-piece"
-                          style="padding-right: 0.5rem;"></i>Event</a></li>
-              <li><a href="#"> <i id="icon" class="fa-solid fa-hand-holding-dollar"
-                          style="padding-right: 0.5rem;"></i>Investors</a></li>
-              <!-- <li><a style="background-color: rebeccapurple;border-radius: 10%;" href="#registration"><i id="icon"
-                  class="fa-solid fa-shoe-prints" style="padding-right: 0.5rem;"></i>Registration</a></li> -->
-              <li><a href="#"><i id="icon" class="fa-solid fa-envelope-open-text"
-                          style="padding-right: 0.5rem;"></i>Contact
-                      Us</a></li>
-              <li><a href="#"><i id="icon" class="fa-solid fa-user-group" style="padding-right: 0.5rem;"></i>Team</a>
-              </li>
-
-          </ul>
+      <nav>
+        <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+        <label for="checkbox3" class="checkbtn">
+          <div class="hamburger hamburger3">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+    
+          </div>
+        </label>
+    
+        <!-- <input type="checkbox" id="check">
+      <label for="check" class="checkbtton">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        
+      </label> -->
+        <!-- <div class="imgg"><a href="./main"><img  class="imgg" src="PSF + Marsh White1.png" alt=""></a></div> -->
+        
+        <ul>
+          <!-- <img class="imgg" src="PSF + Marsh White1.png" alt="PSF + Marsh White1.png"> -->
+          <li> <a href="#"> <i id="icon" class="fa-solid fa-house icon" style="padding-right: 0.5rem;"></i> Home</a> </li>
+          <li><a href="#"> <i id="icon" class="fa-regular fa-file-lines" style="padding-right: 0.5rem;"></i> About Us</a>
+          </li>
+          <li><a href="#"> <i id="icon" class="fa-regular fa-handshake" style="padding-right: 0.5rem;"></i>Startup </a></li>
+          <li><a href="#"> <i id="icon" class="fa-sharp fa-solid fa-puzzle-piece"
+                style="padding-right: 0.5rem;"></i>Event</a></li>
+    
+    
+          <li><a href="#"><i id="icon"
+                  class="fa-solid fa-shoe-prints" style="padding-right: 0.5rem;"></i>Registration</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">OTHER <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#"> <i id="icon" class="fa-regular fa-calendar-days" style="padding-right: 0.5rem;"></i>INTERSHIP
+                PORTAL
+              </a>
+              <a href="#"> <i id="icon" class="fa-solid fa-people-group" style="padding-right: 0.5rem;"></i>ALUMNI</a>
+              <a href="#"> <i id="icon" class="fa-solid fa-hand-holding-dollar"
+                  style="padding-right: 0.5rem;"></i>INVESTORS</a>
+            </div>
+          </div>
+          <li class="mobli"><a href="#"> <i id="icon" class="fa-regular fa-calendar-days" style="padding-right: 0.5rem;"></i>Internship
+              Portal</a></li>
+          <li class="mobli"><a href="#"> <i id="icon" class="fa-solid fa-people-group" style="padding-right: 0.5rem;"></i>Alumni</a></li>
+          <li class="mobli"><a href="#"> <i id="icon" class="fa-solid fa-hand-holding-dollar"
+                style="padding-right: 0.5rem;"></i>Investors</a></li>
+          <li><a href="#"><i id="icon" class="fa-solid fa-envelope-open-text" style="padding-right: 0.5rem;"></i>Contact
+              Us</a></li>
+          <li><a href="#"><i id="icon" class="fa-solid fa-user-group" style="padding-right: 0.5rem;"></i>Team</a></li>
+        </ul>
       </nav>
       <!-- NAVBAR END -->
       <!-- <div class="message">
@@ -176,7 +217,7 @@
 
         </div>
         <!-- THEME START -->
-        <div class="theme">
+        <div class="theme" style="z-index: 1;">
           <div class="what">
             <div class="what-block">
           <h1 class="question1" data-splitting data-aos="fade-up">What is Pune Startup Fest?</h1>
@@ -208,11 +249,12 @@
           <!--				your Patent-->
           <!--				here</a> </button></div>-->
           <!--</center>-->
-          <h1 class="question">Theme : <h1 class="question"
-              style="font-family: reospec; text-align: center; color: lightblue;"> A Concerto
+          <div class="theme-child">
+          <h1 class="question" style="text-align: center;"> <h1 class="theme-statment"
+              style="font-family: reospec; text-align: center; color: lightblue;" data-aos="zoom-out"> A Concerto
               of Innovators</h1>
           </h1>
-          <p>Entrepreneurs strive for innovation; they strive for change. These aspects require the combined
+          <p class="theme-para" data-aos="fade-out">Entrepreneurs strive for innovation; they strive for change. These aspects require the combined
             effort of
             many brilliant and motivated people, where collaboration and creativity are essential for
             success.<br>
@@ -235,7 +277,32 @@
             achieve their objectives, where all the stakeholders contribute their unique skills,
             experiences, talents
             and expertise.</p>
-        </div>
+
+          </div>
+          <section class="splash">
+            <div class="splash__bg">
+              <span class="js-circle"></span>
+              <span class="js-circle"></span>
+              <span class="js-circle"></span>
+              <span class="js-circle"></span>
+              <span class="js-circle"></span>
+              <span class="js-circle"></span>
+            </div>
+          </section>
+          <!-- <section class="splash">
+            <h1>The web is <span>complicated</span>.</h1>
+            <div class="splash__bg">
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section> -->
+      </div>
+
         <div class="parent">
           <div class="play-body">
             <div class="play-backdrop"></div>
@@ -925,7 +992,8 @@
     // });
     AOS.init(
       {
-        duration:2000 
+        duration:2000, 
+        
       }
     );
   </script>
