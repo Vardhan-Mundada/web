@@ -61,7 +61,7 @@
   </script>
 
 <script src="./js/smooth.js"></script>
-<script src="./js/theme.js"></script>
+
 
   <link media="all"
     href="https://cruip.com/wp-content/cache/autoptimize/css/autoptimize_5135fdc87ac4f1636516844aaba4d884.css"
@@ -78,10 +78,10 @@
   let circleSize = 1;
   circleEls.forEach(circle => {
     gsap.set(circle, { scale: circleSize });
-    circleSize += 0.5;
+    circleSize += 0.4;
   });
 
-  circleTl.from(circleEls, { scale: 1, stagger: 0.175, duration: 0.9, ease: Power3.inOut });
+  circleTl.from(circleEls, { scale: 1, stagger: 0.175, duration: 1.2, ease: Power3.inOut });
 });
 
 
@@ -91,7 +91,7 @@
 </head>
 
 <body>
-
+  
 
   <div class="bg-main">
   <div class="bg">
@@ -155,10 +155,7 @@
         </ul>
       </nav>
       <!-- NAVBAR END -->
-      <!-- <div class="message">
-      <h1>Responsive background</h1>
-      <p>With thanks to http://sixrevisions.com/css/responsive-background-image/ and 500px</p>
-    </div> -->
+  
 
       <section class="para-text">
         <h1 class="text"></h1>
@@ -175,7 +172,7 @@
 
     <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
 
-      <div class="text-center">
+      <!-- <div class="text-center"> -->
 
         <!-- Illustration #1 -->
         <div
@@ -202,20 +199,15 @@
           style="top: 90%;" aria-hidden="true">
           <img src="./svg/shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
         </div>
-        <!-- <div class="absolute -translate-y-1/2 translate-x-1/4 blur-3xl opacity-70 pointer-events-none" style="top: 10%; left:10%;" aria-hidden="true">
-              <img src="./svg/shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
-          </div> -->
+        
 
         <!-- Particles animation -->
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0" aria-hidden="true">
           <canvas data-particle-animation></canvas>
         </div>
 
-        <div class="relative">
-
-
-
-        </div>
+        <!-- <div class="relative">
+        </div> -->
         <!-- THEME START -->
         <div class="theme" style="z-index: 1;">
           <div class="what">
@@ -251,18 +243,15 @@
           <!--</center>-->
           <div class="theme-child">
           <h1 class="question" style="text-align: center;"> <h1 class="theme-statment"
-              style="font-family: reospec; text-align: center; color: lightblue;" data-aos="zoom-out"> A Concerto
+              style="font-family: 'Farro', sans-serif; text-align: center; color: lightblue;" data-aos="zoom-out"> A Concerto
               of Innovators</h1>
           </h1>
-          <p class="theme-para" data-aos="fade-out">Entrepreneurs strive for innovation; they strive for change. These aspects require the combined
-            effort of
-            many brilliant and motivated people, where collaboration and creativity are essential for
+          
+          <p class="theme-para" data-aos="fade-out">
+            Entrepreneurs strive for innovation; they strive for change. These aspects require the combined
+            effort of many brilliant and motivated people, where collaboration and creativity are essential for
             success.<br>
-            Our theme, “<span style="font-family: reospec; font-weight: bolder; color: lightblue;">A
-              Concerto Of
-              Innovators</span>”, is a
-            metaphor that
-            describes the allied participation and creative
+            Our theme is a metaphor that describes the allied participation and creative
             efforts that are often required to bring about innovation and success in the startup and
             business world.<br>
             Much like a concerto, we emphasize the value of varied viewpoints and experiences in the startup
@@ -276,8 +265,161 @@
             platform to
             achieve their objectives, where all the stakeholders contribute their unique skills,
             experiences, talents
-            and expertise.</p>
-
+            and expertise.
+          </p>
+          
+              <!-- <p class="theme-para" data-aos="fade-out">
+                <span>Entrepreneurs</span>
+                <span>strive</span>
+                <span>for</span>
+                <span>innovation;</span>
+                <span>they</span>
+                <span>strive</span>
+                <span>for</span>
+                <span>change.</span>
+                <span>These</span>
+                <span>aspects</span>
+                <span>require</span>
+                <span>the</span>
+                <span>combined</span>
+                <span>effort</span>
+                <span>of</span>
+                <span>many</span>
+                <span>brilliant</span>
+                <span>and</span>
+                <span>motivated</span>
+                <span>people,</span>
+                <span>where</span>
+                <span>collaboration</span>
+                <span>and</span>
+                <span>creativity</span>
+                <span>are</span>
+                <span>essential</span>
+                <span>for</span>
+                <span>success.</span>
+                <span>Our</span>
+                <span>theme</span>
+                <span>is</span>
+                <span>a</span>
+                <span>metaphor</span>
+                <span>that</span>
+                <span>describes</span>
+                <span>the</span>
+                <span>allied</span>
+                <span>participation</span>
+                <span>and</span>
+                <span>creative</span>
+                <span>efforts</span>
+                <span>that</span>
+                <span>are</span>
+                <span>often</span>
+                <span>required</span>
+                <span>to</span>
+                <span>bring</span>
+                <span>about</span>
+                <span>innovation</span>
+                <span>and</span>
+                <span>success</span>
+                <span>in</span>
+                <span>the</span>
+                <span>startup</span>
+                <span>and</span>
+                <span>business</span>
+                <span>world.</span>
+                <span>Much</span>
+                <span>like</span>
+                <span>a</span>
+                <span>concerto,</span>
+                <span>we</span>
+                <span>emphasize</span>
+                <span>the</span>
+                <span>value</span>
+                <span>of</span>
+                <span>varied</span>
+                <span>viewpoints</span>
+                <span>and</span>
+                <span>experiences</span>
+                <span>in</span>
+                <span>the</span>
+                <span>startup</span>
+                <span>and</span>
+                <span>entrepreneurial</span>
+                <span>environment.</span>
+                <span>In</span>
+                <span>this</span>
+                <span>concept,</span>
+                <span>each</span>
+                <span>instrument</span>
+                <span>or</span>
+                <span>group</span>
+                <span>of</span>
+                <span>instruments</span>
+                <span>brings</span>
+                <span>about</span>
+                <span>diverse</span>
+                <span>perspectives</span>
+                <span>and</span>
+                <span>contributes</span>
+                <span>to</span>
+                <span>the</span>
+                <span>overall</span>
+                <span>composition.</span>
+                <span>From</span>
+                <span>the</span>
+                <span>founders</span>
+                <span>and</span>
+                <span>CXOs</span>
+                <span>to</span>
+                <span>the</span>
+                <span>entry-level</span>
+                <span>employees,</span>
+                <span>this</span>
+                <span>Concerto</span>
+                <span>is</span>
+                <span>about</span>
+                <span>the</span>
+                <span>allied</span>
+                <span>efforts</span>
+                <span>that</span>
+                <span>all</span>
+                <span>these</span>
+                <span>stakeholders</span>
+                <span>put</span>
+                <span>in</span>
+                <span>to</span>
+                <span>make</span>
+                <span>products/services</span>
+                <span>that</span>
+                <span>change</span>
+                <span>lives.</span>
+                <span>Pune</span>
+                <span>Startup</span>
+                <span>Fest</span>
+                <span>provides</span>
+                <span>these</span>
+                <span>entrepreneurs</span>
+                <span>with</span>
+                <span>a</span>
+                <span>platform</span>
+                <span>to</span>
+                <span>achieve</span>
+                <span>their</span>
+                <span>objectives,</span>
+                <span>where</span>
+                <span>all</span>
+                <span>the</span>
+                <span>stakeholders</span>
+                <span>contribute</span>
+                <span>their</span>
+                <span>unique</span>
+                <span>skills,</span>
+                <span>experiences,</span>
+                <span>talents</span>
+                <span>and</span>
+                <span>expertise.</span>
+              </p> -->
+              
+            
           </div>
           <section class="splash">
             <div class="splash__bg">
@@ -289,21 +431,9 @@
               <span class="js-circle"></span>
             </div>
           </section>
-          <!-- <section class="splash">
-            <h1>The web is <span>complicated</span>.</h1>
-            <div class="splash__bg">
-                <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </section> -->
       </div>
 
-        <div class="parent">
+        <div class="parent" data-aos="fade-up">
           <div class="play-body">
             <div class="play-backdrop"></div>
             <div class="play-button">
@@ -330,6 +460,7 @@
             </div>
           </div>
         </div>
+        
         <!-- THEME END -->
 
         <!-- PAST SPEAKER START -->
@@ -892,7 +1023,7 @@
         <!-- PAST SPEAKER END -->
 
 
-      </div>
+      <!-- </div> -->
       <!-- HIGHLIGHTS START -->
       <section id="box" style="overflow-x: visible;">
         <h1 class="highlight" style="text-align: center ; overflow-x: visible;">
@@ -961,16 +1092,13 @@
 
     </div>
 
-    <!-- Ilusration #5 -->
-    <!-- <div class="absolute bottom-0 left-50 rotate-180 -translate-x-1 -scale-x-100 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
-      <img src="./svg/shape.svg" class="max-w-none" width="852" height="582" alt="Illustration">
-  </div> -->
+    
   </main>
 
- 
+  
   <script src="https://kit.fontawesome.com/6fc46b33e7.js" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'></script>
-  <script src="./js/play.js"></script>
+  
   <script src="./js/highlights.js"></script>
   <script src="https://kit.fontawesome.com/6fc46b33e7.js" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
@@ -978,18 +1106,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="./js/particle-animation.js"></script>
   <script src="./js/spotlight-effect.js"></script>
-
-
+  <script>
+    // Function to split the text content into individual words wrapped in <span> elements
+    function wrapWordsInSpans() {
+      const paragraph = document.querySelector('.theme-para');
+      const words = paragraph.textContent.split(/\s+/); // Split the text into words
+  
+      // Clear the existing content in the paragraph
+      paragraph.innerHTML = '';
+  
+      // Wrap each word in a <span> element with animation properties
+      words.forEach((word, index) => {
+        const span = document.createElement('span');
+        span.textContent = word;
+        span.style.opacity = 0;
+        
+        span.style.filter = 'blur(4px)';
+        span.style.animation = `fade-in 0.8s ${index *0.05}s forwards cubic-bezier(0.11, 0, 0.5, 0)`;
+        paragraph.appendChild(span);
+  
+          // If the word does not end with a punctuation or it's not the last word, add a space after it
+          const space = document.createElement('span');
+          space.textContent = ' ';
+          paragraph.appendChild(space);
+        
+      });
+    }
+  
+    // Call the function to wrap words in <span> elements
+    wrapWordsInSpans();
+  </script>
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
-    // AOS.init({
-    //   offset: 300,
-    //   duration: 2000, 
-    //   once: false,     
-    // });
+
     AOS.init(
       {
         duration:2000, 
@@ -1013,7 +1165,7 @@ applyParallax();
 
   </script>
 
-
+<script src="./js/typewriter.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){

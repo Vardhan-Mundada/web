@@ -1,6 +1,6 @@
 // Particle animation
 class ParticleAnimation {
-  constructor(el, { quantity = 400, staticity = 60, ease = 10 } = {}) {
+  constructor(el, { quantity = 400, staticity = 50, ease = 10 } = {}) {
     this.canvas = el;
     if (!this.canvas) return;
     this.canvasContainer = this.canvas.parentElement;
