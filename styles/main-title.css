@@ -9,6 +9,9 @@
     background-color: #C3CFE2;
   }
   
+  body{
+    background-color: rgb(0, 0, 5);
+  }
 
   .para-text .text {
     /* padding-left: 4rem;   */

@@ -57,12 +57,13 @@ class ParticleAnimation {
 
   resizeCanvas() {
     this.circles.length = 0;
-    this.canvasSize.w = this.canvasContainer.offsetWidth;
-    this.canvasSize.h = this.canvasContainer.offsetHeight;
-    this.canvas.width = this.canvasSize.w * this.dpr;
-    this.canvas.height = this.canvasSize.h * this.dpr;
-    this.canvas.style.width = this.canvasSize.w + 'px';
-    this.canvas.style.height = this.canvasSize.h + 'px';
+    this.canvasSize.w = this.canvasContainer.offsetWidth * 2;
+    this.canvasSize.h = this.canvasContainer.offsetHeight * 2;
+    // this.canvasSize.h = document.documentElement.clientHeight * 2
+    this.canvas.width = this.canvasSize.w * this.dpr * 2;
+    this.canvas.height = this.canvasSize.h * this.dpr * 2;
+    this.canvas.style.width = (this.canvasSize.w * 2) + 'px';
+    this.canvas.style.height = (this.canvasSize.h * 2) + 'px';
     this.context.scale(this.dpr, this.dpr);
   }
 

@@ -388,40 +388,28 @@
 /* Theme End */
 
 
-/* PLayButton Start */
-
-
-/* PLayButton End */
-
-
 /* PastSpeaker Start */
 
-.section-team .header-section {
-    margin-bottom: 50px;
-  }
-  
-  .section-team .header-section .small-title {
-    margin-bottom: 25px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #3e64ff;
-  }
-  
-  .section-team .header-section .title {
-    color: lightsteelblue;
-    font-weight: 900;
-    font-size: 45px;
-  }
-  
-  @media screen and (max-width:480px) {
-    .section-team .header-section .title {
-      margin-top: 20%;
-      margin-left: -20%;
-      font-size: 30px;
-    }
-  
+  .past-title{
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    letter-spacing: 0.5rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #e2d7f8 50%, #bfa2f3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    
+    color: none;
+    
   }
 /* PastSpeaker End */
+
 
 /* Highlights Start */
 
