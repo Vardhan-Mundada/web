@@ -133,8 +133,8 @@
     .theme .theme-child p{
       /* text-align: center; */
       text-align: left;
-      max-width: 80%;
-      margin-left: 8%;
+      max-width: 90%;
+      margin-left: 4%;
     }
     .theme-child .theme-statment{
       text-align: center;
