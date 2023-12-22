@@ -315,7 +315,7 @@
 
   @media screen and (max-width:500px) {
     .splash__bg span{
-      top: 240vw;
+      top: 250vw;
       height: 80px;
       width: 80px;
     }
