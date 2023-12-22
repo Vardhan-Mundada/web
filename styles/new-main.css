@@ -125,8 +125,8 @@
       font-size: 3rem;
     }
     .theme .theme-child{
-      width: 88vw;
-      margin-left: -5%;
+      width: 95vw;
+      margin-left: -10%;
       position: relative;
       justify-content: center;
     }
@@ -315,7 +315,7 @@
 
   @media screen and (max-width:500px) {
     .splash__bg span{
-      top: 252vw;
+      top: 256vw;
       height: 70px;
       width: 70px;
     }
